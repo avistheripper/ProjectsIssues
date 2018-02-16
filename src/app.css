@@ -1,0 +1,45 @@
+.main-cover{
+  background-color: #343a40;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.App-title{
+  width: 100%;
+  background: #292b2c;
+  color: white;
+  padding: 5px;
+  margin: 0!important;
+}
+.btn-out{
+float: right;
+}
+.log-out{
+padding: 5px;
+}
+.add-goal{
+  margin: 5px;
+  justify-content: center;
+
+}
+.list-title{
+  color: white;
+  text-align: center;
+  letter-spacing: 0.3em;
+}
+
+.goal-card{
+  background-color:#6c757dc4!important;
+  color: white;
+  margin-top: 5px;
+}
+.completed-goal{
+  color: white;
+  text-align: center;
+}
+.log-form{
+  justify-content: center;
+  width: 100%;
+  border: 1px solid grey;
+  padding: 10px;
+}

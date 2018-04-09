@@ -15,7 +15,7 @@ firebaseApp.auth().signOut();
       <div className='wrapper main-cover'>
       <div className='App-title row'>
       <div className="col">
-        <h3 className='title-brand'>Project Managing via React-redux.js</h3>
+        <h3 className='title-brand'>Project via React-redux.js</h3>
       </div>
       <div className='col log-out '>
       <button className="btn btn-primary btn-sm btn-out" onClick={() => this.signOut()}>

@@ -6,13 +6,12 @@ import { completedGoals } from '../firebase';
 class CompletedGoalList extends Component{
   componentDidMount(){
     completedGoals.on('value', snap => {
-    let completedGoals = [];
-snap.forEach(completedGoal => {
+      let completedGoals = [];
+        snap.forEach(completedGoal => {
 
-  const { email, title } = completedGoal.val();
-completedGoals.push({email, title});
+      const { email, title } = completedGoal.val();
+        completedGoals.push({email, title});
       })
-
   this.props.setCompleted(completedGoals);
     })
   }
@@ -39,11 +38,8 @@ completedGoals.push({email, title});
     )
   }
 }
-function mapStateToProps(state){
-  const { completedGoals } = state;
-  return{
+const mapStateToProps = ({completedGoals}) => ({
     completedGoals
-  }
-}
+});
 
 export default connect(mapStateToProps,{ setCompleted }) (CompletedGoalList);
